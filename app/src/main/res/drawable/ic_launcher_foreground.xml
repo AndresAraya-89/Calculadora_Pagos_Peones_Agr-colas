@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Moneda: anillo exterior -->
+    <path
+        android:fillType="evenOdd"
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,54 a30,30 0 1,0 60,0 a30,30 0 1,0 -60,0 Z M38,54 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0 Z" />
+    <!-- Marca central: cruz de suma (calcular pago) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,42 h8 v8 h8 v8 h-8 v8 h-8 v-8 h-8 v-8 h8 z" />
+</vector>

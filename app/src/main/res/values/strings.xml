@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pago Peones</string>
+
+    <!-- Pantalla principal -->
+    <string name="titulo_calculadora">Calculadora de Pago</string>
+    <string name="tipo_jornada">Tipo de jornada</string>
+    <string name="jornada_normal">Normal</string>
+    <string name="jornada_dura">Dura</string>
+    <string name="horas_trabajadas">Horas trabajadas</string>
+    <string name="btn_mas">+</string>
+    <string name="btn_menos">−</string>
+    <string name="desglose">Desglose del pago</string>
+    <string name="horas_base_label">Horas base</string>
+    <string name="horas_extra_label">Horas extra</string>
+    <string name="reconocimiento_label">Reconocimiento jornada dura</string>
+    <string name="subtotal_label">Subtotal</string>
+    <string name="total_label">TOTAL A PAGAR</string>
+    <string name="btn_compartir">Compartir resumen</string>
+    <string name="btn_configuracion">Configuración</string>
+    <string name="btn_manual">Manual de usuario</string>
+    <string name="error_horas_vacias">Ingrese las horas trabajadas</string>
+    <string name="error_horas_negativas">Las horas deben ser mayores a 0</string>
+    <string name="error_horas_maximas">Las horas no pueden ser mayores a 16</string>
+
+    <!-- Configuración -->
+    <string name="titulo_configuracion">Configuración</string>
+    <string name="seccion_parametros">Parámetros de pago</string>
+    <string name="label_horas_jornada_base">Horas de una jornada base</string>
+    <string name="label_precio_hora_normal">Precio por hora normal (₡)</string>
+    <string name="label_reconocimiento_dura">Reconocimiento por jornada dura (₡)</string>
+    <string name="label_extra_normal">Hora extra en jornada normal (₡)</string>
+    <string name="label_extra_dura">Hora extra en jornada dura (₡)</string>
+    <string name="label_sumar_recon_extras">Sumar reconocimiento en jornada dura con extras</string>
+    <string name="label_recon_menos_jornada">Reconocer jornada dura si trabaja menos de la jornada base</string>
+    <string name="seccion_redondeo">Redondeo del total</string>
+    <string name="label_redondeo_activo">Activar redondeo</string>
+    <string name="label_unidad_redondeo">Unidad de redondeo</string>
+    <string name="label_modo_redondeo">Modo de redondeo</string>
+    <string name="modo_mas_cercano">Al más cercano</string>
+    <string name="modo_siempre_arriba">Siempre hacia arriba</string>
+    <string name="modo_siempre_abajo">Siempre hacia abajo</string>
+    <string name="btn_guardar">Guardar cambios</string>
+    <string name="btn_restaurar">Restaurar valores por defecto</string>
+    <string name="confirmar_restaurar_titulo">Restaurar valores</string>
+    <string name="confirmar_restaurar_mensaje">¿Está seguro de restaurar todos los valores por defecto? Esta acción no se puede deshacer.</string>
+    <string name="ultima_modificacion">Última modificación: %1$s</string>
+    <string name="seccion_pin">Seguridad</string>
+    <string name="label_usar_pin">Pedir PIN para entrar a Configuración</string>
+    <string name="label_nuevo_pin">PIN de 4 dígitos</string>
+    <string name="dialogo_pin_titulo">Ingrese el PIN</string>
+    <string name="dialogo_pin_mensaje">Esta sección está protegida con PIN.</string>
+    <string name="pin_incorrecto">PIN incorrecto</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="cambios_guardados">Cambios guardados</string>
+    <string name="valores_restaurados">Valores restaurados</string>
+    <string name="pin_debe_tener_4_digitos">El PIN debe tener exactamente 4 dígitos</string>
+    <string name="valores_invalidos">Revise los valores: no pueden estar vacíos ni ser negativos</string>
+
+    <!-- Manual -->
+    <string name="titulo_manual">Manual de usuario</string>
+
+    <!-- Compartir -->
+    <string name="titulo_compartir">Compartir resumen de pago</string>
+</resources>

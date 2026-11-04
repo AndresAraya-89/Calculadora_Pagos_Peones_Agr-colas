@@ -1,0 +1,38 @@
+# Documentación interna (no es necesaria para quien clone el repo)
+indicaciones.md
+
+# Gradle
+.gradle/
+build/
+app/build/
+app/release/
+app/debug/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Local config (rutas del SDK/NDK propias de cada máquina)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# Firma de la app -- NUNCA subir esto a git
+*.jks
+*.keystore
+key.properties
+keystore.properties
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

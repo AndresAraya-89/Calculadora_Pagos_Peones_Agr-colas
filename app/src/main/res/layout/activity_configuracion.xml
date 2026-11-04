@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verde_principal"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_configuracion"
+            android:textColor="@color/blanco"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textoUltimaModificacion"
+                style="@style/TextoValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                style="@style/TextoEtiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seccion_parametros"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Horas jornada base -->
+            <TextView style="@style/TextoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_horas_jornada_base" android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/editHorasJornadaBase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_campo_texto"
+                android:inputType="numberDecimal"
+                android:textColor="@color/negro"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Precio hora normal -->
+            <TextView style="@style/TextoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_precio_hora_normal" android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/editPrecioHoraNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_campo_texto"
+                android:inputType="number"
+                android:textColor="@color/negro"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Reconocimiento jornada dura -->
+            <TextView style="@style/TextoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_reconocimiento_dura" android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/editReconocimientoDura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_campo_texto"
+                android:inputType="number"
+                android:textColor="@color/negro"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Hora extra normal -->
+            <TextView style="@style/TextoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_extra_normal" android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/editExtraNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_campo_texto"
+                android:inputType="number"
+                android:textColor="@color/negro"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Hora extra dura -->
+            <TextView style="@style/TextoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_extra_dura" android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/editExtraDura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_campo_texto"
+                android:inputType="number"
+                android:textColor="@color/negro"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Interruptores -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    style="@style/TextoValor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_sumar_recon_extras" />
+
+                <Switch
+                    android:id="@+id/switchSumarReconExtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    style="@style/TextoValor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_recon_menos_jornada" />
+
+                <Switch
+                    android:id="@+id/switchReconMenosJornada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gris_borde" android:layout_marginBottom="20dp" />
+
+            <!-- Redondeo -->
+            <TextView
+                style="@style/TextoEtiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seccion_redondeo"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    style="@style/TextoValor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_redondeo_activo" />
+
+                <Switch
+                    android:id="@+id/switchRedondeoActivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView style="@style/TextoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_unidad_redondeo" android:layout_marginBottom="4dp" />
+            <RadioGroup
+                android:id="@+id/grupoUnidadRedondeo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioUnidad100"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="₡100" />
+
+                <RadioButton
+                    android:id="@+id/radioUnidad500"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="₡500" />
+
+                <RadioButton
+                    android:id="@+id/radioUnidad1000"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="₡1 000"
+                    android:checked="true" />
+            </RadioGroup>
+
+            <TextView style="@style/TextoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_modo_redondeo" android:layout_marginBottom="4dp" />
+            <RadioGroup
+                android:id="@+id/grupoModoRedondeo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/radioMasCercano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modo_mas_cercano"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioSiempreArriba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modo_siempre_arriba" />
+
+                <RadioButton
+                    android:id="@+id/radioSiempreAbajo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modo_siempre_abajo" />
+            </RadioGroup>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gris_borde" android:layout_marginBottom="20dp" />
+
+            <!-- PIN -->
+            <TextView
+                style="@style/TextoEtiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seccion_pin"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    style="@style/TextoValor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_usar_pin" />
+
+                <Switch
+                    android:id="@+id/switchUsarPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_campo_texto"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:textColor="@color/negro"
+                android:hint="@string/label_nuevo_pin"
+                android:visibility="gone"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                style="@style/BotonPrincipal"
+                android:text="@string/btn_guardar"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnRestaurar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                style="@style/BotonSecundario"
+                android:text="@string/btn_restaurar" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

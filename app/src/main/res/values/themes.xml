@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PagoPeones" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/verde_principal</item>
+        <item name="colorPrimaryDark">@color/verde_oscuro</item>
+        <item name="colorAccent">@color/verde_oscuro</item>
+        <item name="android:windowBackground">@color/blanco</item>
+        <item name="android:textColorPrimary">@color/negro</item>
+        <item name="android:statusBarColor">@color/verde_oscuro</item>
+    </style>
+
+    <style name="BotonPrincipal">
+        <item name="android:background">@drawable/fondo_boton_verde</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BotonSecundario">
+        <item name="android:background">@drawable/fondo_boton_borde_verde</item>
+        <item name="android:textColor">@color/verde_oscuro</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextoEtiqueta">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextoValor">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
