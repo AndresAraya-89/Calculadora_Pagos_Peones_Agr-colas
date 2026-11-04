@@ -22,6 +22,32 @@ app/src/main/java/com/finca/pagopeones/
 app/src/test/java/.../calculo/PayCalculatorTest.kt  -> Pruebas unitarias JUnit
 ```
 
+## Forma rápida: descargar el APK ya compilado desde GitHub (sin instalar nada en la PC)
+
+Este repositorio tiene un workflow de **GitHub Actions**
+(`.github/workflows/build-apk.yml`) que compila automáticamente un APK de
+prueba (debug) cada vez que se sube un cambio a la rama `main`, y lo publica
+como archivo descargable en la sección **Releases** del repo.
+
+1. Desde el celular (o cualquier navegador), entra al repositorio en GitHub.
+2. Ve a la pestaña **Releases** (o a la URL `.../releases/tag/apk-latest`).
+3. Descarga el archivo **`PagoPeones.apk`**.
+4. Ábrelo desde el administrador de archivos o las notificaciones de
+   descarga. Si Android pide activar **"Instalar apps desconocidas"**,
+   actívalo para la app que usaste para abrir el archivo (Chrome,
+   Archivos, etc.) — ver el detalle en el **Paso 4** más abajo.
+5. Toca **Instalar**.
+
+Si acabas de subir el proyecto y todavía no corrió el workflow, ve a la
+pestaña **Actions** del repo y espera a que termine la ejecución
+"Compilar APK" (toma unos minutos), o dispárala manualmente desde ahí con
+el botón **Run workflow**.
+
+> Esta compilación automática es una versión **debug** (de prueba), pensada
+> para instalar rápido y probar. Para la versión final, firmada, optimizada
+> con R8 y de menos de 2 MB para repartir entre los 3 hermanos, sigue los
+> Pasos 1 a 4 de abajo.
+
 ## Paso 1: Abrir el proyecto en Android Studio
 
 1. Instale **Android Studio** (versión reciente, ej. Android Studio
